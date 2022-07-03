@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Title-->
+<!--        <TextView-->
+<!--            android:id="@+id/parent_item_title"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="12sp"-->
+<!--            android:textSize="18sp" />-->
+                            <com.example.uitscuisine.custom_textview.PoppinsMediumTextView
+                    android:id="@+id/parent_item_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_rowWeight="1"
+                                android:layout_columnWeight="1"
+                                android:layout_weight="1"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="10dp"
+                                android:textColor="#959595"
+                                android:textSize="10pt"
+                                />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:orientation="horizontal">
+
+        <!--Child RecyclerView-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/child_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+</LinearLayout>
